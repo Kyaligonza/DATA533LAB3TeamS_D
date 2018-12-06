@@ -16,11 +16,7 @@ class TestMirrorSquared(unittest.TestCase):
         self.t5 = MirrorSquared("dog \ where has it gone") # sentence with \ inside 
         
     def tearDown(self):
-        self.t1 = MirrorSquared("DOG IS")#test for  all capitals
-        self.t2 = MirrorSquared("DOG")# test for single word
-        self.t3 = MirrorSquared("dog is mad")#test for  all lowercases
-        self.t4 = MirrorSquared("dog 'he said' what")# sentence(s) with '' inside
-        self.t5 = MirrorSquared("dog \ where has it gone") # sentence with \ inside 
+         pass
 
     def test_mirrorsquared(self):
         self.assertEqual(self.t1.text_revsquared(), 'S I   G O D')
